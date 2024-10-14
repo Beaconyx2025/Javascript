@@ -42,3 +42,5 @@ console.log(typeof {}); // "object"
 console.log(typeof []); // "object" (배열도 객체로 간주)
 console.log(typeof null); // "object" (자바스크립트의 오래된 버그)
 console.log(typeof undefined); // "undefined"
+
+if (!"") console.log("" + " is falsy value");

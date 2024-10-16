@@ -44,3 +44,40 @@ console.log(typeof null); // "object" (자바스크립트의 오래된 버그)
 console.log(typeof undefined); // "undefined"
 
 if (!"") console.log("" + " is falsy value");
+
+console.log("0" && "0");
+
+function getStringLength(str) {
+  str = str || "";
+  return str.length;
+}
+
+console.log(getStringLength());
+console.log(getStringLength("hello"));
+
+var w = "hello";
+
+var length = w?.length;
+console.log(length);
+
+var foo = "1" ?? "default string";
+console.log(foo);
+
+var obj = {};
+var key = "hello";
+
+obj[key] = "world";
+
+console.log(obj);
+
+var person = {
+  last_name: "lee",
+  1: 10,
+};
+
+console.log(person.last_name);
+
+var x = 1,
+  y = 2;
+const test = { x, y };
+console.log(test);

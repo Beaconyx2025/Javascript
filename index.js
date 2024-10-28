@@ -127,21 +127,43 @@
 // foo();
 // bar();
 
-function a() {
-  let aa = 123;
-  console.log(aa);
-  function b() {
-    let bb;
-    aa = 789;
-    console.log((bb = 234));
-    function c() {
-      let cc;
-      console.log((cc = 456));
-    }
-    c();
+// function a() {
+//   let aa = 123;
+//   console.log(aa);
+//   function b() {
+//     let bb = 234;
+//     aa = 789;
+//     console.log(aa);
+//     console.log(bb);
+//     // function c() {
+//     //   let cc;
+//     //   console.log((cc = 456));
+//     // }
+//     // c();
+//   }
+//   return b;
+// }
+
+// const demo = a();
+// demo();
+// demo();
+// a();
+
+function test() {
+  var arr = [];
+  for (var i = 0; i < 10; i++) {
+    arr[i] = function () {
+      console.log(i + " ");
+    };
   }
-  return b;
+  return arr;
 }
 
-const demo = a();
-demo();
+const myArr = test();
+for (var j = 0; j < 10; j++) {
+  (function (j) {
+    myArr[j]();
+  })(j);
+}
+
+console.log("Project modification completed");

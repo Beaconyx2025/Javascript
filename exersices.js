@@ -122,3 +122,28 @@ const result = numbers
   .reduce((sum, num) => sum + num, 0); // 남은 숫자들을 합칩니다.
 
 console.log(result);
+
+
+const arr = [{ title: "name", content: "content" }];
+
+if (arr.includes({ title: "name", content: "content" })) console.log(arr);//fales
+객체 arr 와 includes 안에 있는 내용 주소 달라요
+
+arr.forEach((element, index) => {
+  console.log(`Index: ${index}, Element: ${element}`);
+}); 
+//Index: 0, Element: x Index: 1, Element: y Index: 2, Element: z
+
+
+for (const a of arr) {
+  console.log(a + 10);} //每个元素加10打印
+
+  const arr = { title: "name", content: "content",};
+for (const entries in arr) {
+  console.log(arr[entries]);} //name content 返回值 
+for (const key in arr) {
+  console.log(key);} //title content 返回key
+
+  const obj = { age: 20, height: "190cm" };
+const entries = Object.entries(obj);
+console.log(entries); //[ ['age', 20], ['height', '190cm'] ]

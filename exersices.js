@@ -147,3 +147,6 @@ for (const key in arr) {
   const obj = { age: 20, height: "190cm" };
 const entries = Object.entries(obj);
 console.log(entries); //[ ['age', 20], ['height', '190cm'] ]
+
+
+console.log(entries); //[ ['age', 20], ['height', '190cm'] ]

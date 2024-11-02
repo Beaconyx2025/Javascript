@@ -146,3 +146,7 @@ arr.forEach((item, index) => {
     console.log(`arr[${index}] 不是数组`);
   }
 });
+
+document.getElementById;
+document.getElementsByClassName;
+document.getElementsByTagNameNS;

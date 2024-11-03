@@ -150,3 +150,5 @@ arr.forEach((item, index) => {
 document.getElementById;
 document.getElementsByClassName;
 document.getElementsByTagNameNS;
+
+document.querySelector;
